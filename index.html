@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Портфолио — демо-сайты</title>
+<meta name="description" content="Набор демонстрационных сайтов: кофейня, барбершоп, цветочная мастерская, детейлинг, видео-проекты.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗂️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#0e1013;--surface:#15181d;--ink:#f0f3f6;--muted:#8f9ba8;--line:rgba(240,243,246,.1);--accent:#edff39;--wrap:1180px}
+  *,*::before,*::after{box-sizing:border-box}
+  body{margin:0;font-family:'Inter Tight','Helvetica Neue',Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  img{display:block;max-width:100%}
+  .wrap{width:min(var(--wrap),92vw);margin-inline:auto;padding:clamp(3rem,7vw,6rem) 0}
+  h1{font-size:clamp(2rem,5vw,3.4rem);letter-spacing:-.03em;line-height:1.05;margin:0;font-weight:400}
+  .eyebrow{font-size:.76rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:500;margin:0}
+  .lead{color:var(--muted);max-width:60ch;margin-top:1.2rem;font-size:1.05rem}
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem;margin-top:3rem}
+  .card{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:.35s;display:flex;flex-direction:column}
+  .card:hover{transform:translateY(-6px);border-color:var(--accent)}
+  .thumb{aspect-ratio:16/10;overflow:hidden;position:relative}
+  .thumb img{width:100%;height:100%;object-fit:cover;filter:brightness(.85);transition:.6s}
+  .card:hover .thumb img{transform:scale(1.05);filter:brightness(1)}
+  .num{position:absolute;top:.9rem;left:.9rem;background:rgba(0,0,0,.6);backdrop-filter:blur(6px);border-radius:999px;padding:.3rem .75rem;font-size:.72rem;letter-spacing:.08em}
+  .body{padding:1.4rem 1.5rem 1.6rem;display:flex;flex-direction:column;gap:.4rem}
+  .body h2{font-size:1.5rem;margin:0;font-weight:400;letter-spacing:-.02em}
+  .body p{color:var(--muted);font-size:.95rem;margin:0}
+  .go{margin-top:.9rem;color:var(--accent);font-weight:500;font-size:.9rem}
+  footer{border-top:1px solid var(--line);color:var(--muted);font-size:.85rem;padding:1.6rem 0;text-align:center}
+  @media(max-width:720px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <p class="eyebrow">Портфолио · демо-проекты</p>
+    <h1>Демо-сайты для портфолио</h1>
+    <p class="lead">Вымышленные проекты в разных нишах и стилистиках. Каждый открывается по своей публичной ссылке.</p>
+
+    <div class="grid">
+      <a class="card" href="https://coderrrcoffee.github.io/coffee-landing/">
+        <div class="thumb"><span class="num">01</span><img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=1000&q=60" alt="Кофейня"></div>
+        <div class="body"><h2>Чёрный дрозд</h2><p>Обжарочная кофейня — тёплая палитра, меню, бронь стола.</p><span class="go">Открыть →</span></div>
+      </a>
+      <a class="card" href="https://coderrrcoffee.github.io/barber-landing/">
+        <div class="thumb"><span class="num">02</span><img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1000&q=60" alt="Барбершоп"></div>
+        <div class="body"><h2>Клинок</h2><p>Барбершоп — тёмная тема, прайс, мастера, запись.</p><span class="go">Открыть →</span></div>
+      </a>
+      <a class="card" href="https://coderrrcoffee.github.io/flower-landing/">
+        <div class="thumb"><span class="num">03</span><img src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?auto=format&fit=crop&w=1000&q=60" alt="Цветочная мастерская"></div>
+        <div class="body"><h2>Пион</h2><p>Цветочная мастерская — каталог букетов и доставка.</p><span class="go">Открыть →</span></div>
+      </a>
+      <a class="card" href="https://coderrrcoffee.github.io/detailing-landing/">
+        <div class="thumb"><span class="num">04</span><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=60" alt="Детейлинг"></div>
+        <div class="body"><h2>Глянец</h2><p>Детейлинг-центр — услуги и слайдер «до/после».</p><span class="go">Открыть →</span></div>
+      </a>
+      <a class="card" href="https://coderrrcoffee.github.io/cast-render/">
+        <div class="thumb" style="background:linear-gradient(135deg,#f2f0ec,#c9d3dd)"><span class="num">05</span></div>
+        <div class="body"><h2>Cast &amp; Render</h2><p>Скролл-скраб видео, три панели. Один HTML-файл.</p><span class="go">Открыть →</span></div>
+      </a>
+      <a class="card" href="https://coderrrcoffee.github.io/scroll-tied-video/">
+        <div class="thumb" style="background:linear-gradient(135deg,#0e1013,#35586e)"><span class="num">06</span></div>
+        <div class="body"><h2>Scroll Tied Video</h2><p>Vite + React + TS, видео привязано к скроллу.</p><span class="go">Открыть →</span></div>
+      </a>
+    </div>
+  </div>
+  <footer>© <span id="y">2026</span> Демо-проекты · фото: Unsplash</footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
